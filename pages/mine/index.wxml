@@ -1,0 +1,28 @@
+
+  <view class='headName'>
+    <image class='head' src='{{wximg}}'></image>
+    <view class='name'>{{userName}}</view>
+  </view>
+
+  <view class='grayLine1'></view>
+
+  <view class='personalInformation' bindtap='toTaskSend'>
+    <image class='icon'  src='../../images/1-02.png'></image>
+    <view class='text'>任务分发</view>
+  </view>
+
+  <view class='grayLine1'></view> 
+
+  <view class='personalInformation' bindtap='toSalaryPage'>
+    <image class='icon'  src='../../images/1-03.png'></image>
+    <view class='text'>自助查询</view>
+  </view>
+  <view class='grayLine1'></view> 
+
+ <view class='personalInformation' bindtap='editPassword'>
+    <image class='icon'  src='../../images/update_pass.png'></image>
+    <view class='text'>修改密码</view>
+  </view>
+  <view class='grayLine1'></view>
+
+<button bindtap="logout" type="primary">退出</button>

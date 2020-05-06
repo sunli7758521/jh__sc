@@ -1,0 +1,23 @@
+<form bindsubmit="formSubmit">
+  <view class="login">
+    <text class="explain">请输入账号信息</text>
+    <view class="form_wap">
+      <view class="flex_wap input_wap">
+        <text class="label">账号</text>
+        <input value='' id="username" name="username" class='account_input'></input>
+      </view>
+    </view>
+    <view class="form_wap">
+      <view class="flex_wap input_wap">
+        <text class="label">密码</text>
+        <input value='' type='password' id="password" name="password" class='account_input'></input>
+      </view>
+    </view>
+    <text wx:if="errInfo" class="errInfo">{{errInfo}}</text>
+    <!-- <text class="explain">准确填写，如果没有账号请注册</text> -->
+    <button class="mysubmit" type="primary" form-type="submit" size='default'>登陆</button>
+    <!-- <button class="mysubmit" type="primary" bindtap='toRegister'>注册</button> -->
+    <!-- <button open-type="getUserInfo" bindgetuserinfo="wx_userinfo" class="wx">微信登陆  </button> -->
+  
+  </view>
+</form>

@@ -1,0 +1,20 @@
+<scroll-view scroll-x="true">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">项目名称</view>
+      <view class="th">作业单名称</view>
+      <view class="th">总需求量(樘)</view>
+      <view class="th">工序数量百分比</view>
+    </view>
+    <scroll-view scroll-x="true" scroll-y="true" style='height:{{tbodyHeight}}px;'>
+      <block wx:for="{{listData}}" wx:key="listData">
+        <view class="tr bg-g">
+          <view class="td" bindtap='todetail' data-bankId="{{item.id}}" data-taskId="{{item.taskId}}">{{item.projectName}}</view>
+          <view class="td" bindtap='todetail' data-bankId="{{item.id}}" data-taskId="{{item.taskId}}">{{item.taskName}}</view>
+          <view class="td" bindtap='todetail' data-bankId="{{item.id}}" data-taskId="{{item.taskId}}">{{item.totalNum}}</view>
+          <view class="td" bindtap='todetail' data-bankId="{{item.id}}" data-taskId="{{item.taskId}}">{{item.percentage}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+ </scroll-view>

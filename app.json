@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/reporting_procedure/index",
+    "pages/task_send/index",
+    "pages/task_send_detail/index",
+    "pages/toSalaryPage/index",
+    "pages/editPassword/index",
+    "pages/mine/index",
+    "pages/report_sepeial/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "聚辉生产管控系统",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eb2afe",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#999999",
+    "list": [
+      {
+        "pagePath": "pages/reporting_procedure/index",
+        "text": "上报工序",
+        "iconPath": "/img/e-off.png",
+        "selectedIconPath": "/img/e-on.png"
+      },
+      {
+        "pagePath": "pages/report_sepeial/index",
+        "text": "上报特殊工序",
+        "iconPath": "/img/b-off.png",
+        "selectedIconPath": "/img/b-on.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "个人中心",
+        "iconPath": "/img/d-off.png",
+        "selectedIconPath": "/img/d-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+ 
+  
+}

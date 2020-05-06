@@ -1,0 +1,48 @@
+<scroll-view scroll-x="true">
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      <view class="section__title">开始时间:</view>
+      <picker name="startTime" mode="date" value="{{startTime}}" bindchange="bindBeginDateChange">
+        <view class="picker">
+          {{startTime}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">结束时间:</view>
+      <picker name="endTime" mode="date" value="{{endTime}}" bindchange="bindEndDateChange">
+        <view class="picker">
+          {{endTime}}
+        </view>
+      </picker>
+    </view>
+    <button form-type="submit" type="primary">查询</button>
+  </form>
+  <text class="errInfo">工资总计：{{totalSalary==null||totalSalary==''?0:totalSalary}}元</text>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">员工</view>
+      <view class="th">作业单编号</view>
+      <view class="th">作业单名称</view>
+      <view class="th">工序</view>
+      <view class="th">数量</view>
+      <view class="th">日期</view>
+      <view class="th">单价</view>
+      <view class="th">当日工资</view>
+    </view>
+    <scroll-view scroll-x="true" scroll-y="true" style='height:{{tbodyHeight}}px;'>
+      <block wx:for="{{listData}}" wx:key="listData">
+        <view class="tr bg-g">
+          <view class="td">{{item.userName}}</view>
+          <view class="td">{{item.taskCode}}</view>
+          <view class="td">{{item.taskName}}</view>
+          <view class="td">{{item.processNormName}}</view>
+          <view class="td">{{item.reportNum}}</view>
+          <view class="td">{{item.createTime}}</view>
+          <view class="td">{{item.price}}</view>
+          <view class="td">{{item.salary}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</scroll-view>

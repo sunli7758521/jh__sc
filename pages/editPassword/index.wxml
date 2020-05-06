@@ -1,0 +1,26 @@
+<form bindsubmit='formSubmit'>
+  <view class="login">
+    <text class="explain">避免密码泄露，必须重置原始密码</text>
+    <view class="form_wap">
+      <view class="flex_wap input_wap">
+        <text class="label">原始密码</text>
+        <input name="oldPassword" class='account_input' value='{{oldPassword}}'></input>
+      </view>
+    </view>
+    <view class="form_wap">
+      <view class="flex_wap input_wap">
+        <text class="label">新密码</text>
+        <input value='' name="newPassword" maxlength='16' class='account_input' placeholder='最长输入16位' type='password'></input>
+      </view>
+    </view>
+    <view class="form_wap">
+      <view class="flex_wap input_wap">
+        <text class="label">确认密码</text>
+        <input value='' name="confirmPassword" maxlength='16'  class='account_input' placeholder='最长输入16位' type='password'></input>
+      </view>
+    </view>
+    <text wx:if="errInfo" class="errInfo">{{errInfo}}</text>
+    <text class="explain">密码修改后，务须牢记</text>
+    <button class="mysubmit" type="primary" form-type='submit'>提交</button>
+  </view>
+</form>

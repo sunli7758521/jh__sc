@@ -1,0 +1,56 @@
+page{
+  background-color: #f2f2f2;
+}
+.login{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 4px 12px;
+}
+.explain{
+  display: block;
+  margin: 8px 0;
+  color: gray;
+  font-size: 14px;
+}
+.form_wap{
+ border-top: 1px solid #eee;
+  margin: 10px 0;
+}
+.flex_wap{
+  display: flex;
+  flex-direction: row;
+}
+.input_wap{
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  margin: 0 -12px;
+  padding: 0 12px;
+  height: 46px;
+  line-height: 46px;
+}
+.label{
+  color:#999;
+  width:4.5em;
+}
+.account_input{
+  font-size: 18px;
+  line-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+.mysubmit{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.wx{
+  width: 100%;
+  background-color: red;
+  color: white;
+}
+.errInfo{
+  color:red;
+}

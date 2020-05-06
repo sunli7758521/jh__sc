@@ -1,0 +1,28 @@
+<scroll-view scroll-x="true">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">窗号</view>
+      <view class="th">工序组</view>
+      <view class="th">工序名称</view>
+      <view class="th">工序需求量</view>
+      <view class="th">已产量</view>
+      <view class="th">待产量</view>
+      <view class="th">开始时间</view>
+      <view class="th">结束时间</view>
+    </view>
+    <scroll-view scroll-x="true" scroll-y="true" style='height:{{tbodyHeight}}px;'>
+      <block wx:for="{{listData}}" wx:key="listData">
+        <view class="tr bg-g">
+          <view class="td">{{item.winNo}}</view>
+          <view class="td">{{item.teamGroup}}</view>
+          <view class="td">{{item.processNormName}}</view>
+          <view class="td">{{item.processNeedNum}}</view>
+          <view class="td">{{item.reportSumNum}}</view>
+          <view class="td">{{item.processNeedNum-item.reportNum}}</view>
+          <view class="td">{{item.actualBeginTime}}</view>
+          <view class="td">{{item.actualEndTime}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</scroll-view>
